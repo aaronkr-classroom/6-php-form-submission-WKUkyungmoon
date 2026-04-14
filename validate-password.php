@@ -9,6 +9,7 @@ function is_password(string $password): bool
         and preg_match('/[A-Z]/', $password)
         and preg_match('/[a-z]/', $password)
         and preg_match('/[0-9]/', $password)
+        and preg_match('/[!@#$%^&*()_-]/', 'Select an option');
     ) {
         return true;  // Passed all tests
     }
